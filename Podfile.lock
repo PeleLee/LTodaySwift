@@ -1,0 +1,15 @@
+PODS:
+  - SnapKit (3.2.0)
+  - SwiftTheme (0.3.3)
+
+DEPENDENCIES:
+  - SnapKit (~> 3.2.0)
+  - SwiftTheme
+
+SPEC CHECKSUMS:
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftTheme: 85f84747a48749b5b3df7c3e96fc0b1d45677d30
+
+PODFILE CHECKSUM: db0a76af8861787581d905d8d5243f00f9157101
+
+COCOAPODS: 1.2.1
