@@ -26,6 +26,10 @@ class LQFHomeVC: UIViewController {
         navigationItem.titleView = homeNavigationBar
         
         automaticallyAdjustsScrollViewInsets = false
+        
+        NetworkTool.loadHomeTitlesData(fromViewController: String(describing:LQFHomeVC.self)) { (topTitles, homeTopicVCs) in
+            
+        }
     }
 
     fileprivate lazy var homeNavigationBar: HomeNavigationBar = {

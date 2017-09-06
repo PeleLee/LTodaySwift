@@ -15,6 +15,9 @@
 		DB487F251F4ABAC6000FF85B /* SwiftTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB487F241F4ABAC6000FF85B /* SwiftTheme.framework */; };
 		DB487F2B1F4ABCF9000FF85B /* AdvertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB487F291F4ABCF9000FF85B /* AdvertiseViewController.swift */; };
 		DB487F2C1F4ABCF9000FF85B /* AdvertiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB487F2A1F4ABCF9000FF85B /* AdvertiseViewController.xib */; };
+		DBD8E44A1F5FCF0E00FA3882 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E4491F5FCF0E00FA3882 /* NetworkTool.swift */; };
+		DBD8E44C1F5FCFDC00FA3882 /* TopicTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E44B1F5FCFDC00FA3882 /* TopicTitle.swift */; };
+		DBD8E44E1F5FD1A400FA3882 /* LQFTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E44D1F5FD1A400FA3882 /* LQFTopicVC.swift */; };
 		DBF8A5101F5E9BE80039A606 /* LQFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8A50F1F5E9BE80039A606 /* LQFNavigationController.swift */; };
 		DBF8A5131F5EA13C0039A606 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8A5121F5EA13C0039A606 /* UIColor+Extension.swift */; };
 		DBF8A51A1F5EA68F0039A606 /* LQFHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8A5191F5EA68F0039A606 /* LQFHomeVC.swift */; };
@@ -39,6 +42,9 @@
 		DB487F241F4ABAC6000FF85B /* SwiftTheme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTheme.framework; path = "../../Library/Developer/Xcode/DerivedData/LTodaySwift-hdbkmuggiarzlwdpjrtosvviahdi/Build/Products/Debug-iphonesimulator/SwiftTheme/SwiftTheme.framework"; sourceTree = "<group>"; };
 		DB487F291F4ABCF9000FF85B /* AdvertiseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertiseViewController.swift; sourceTree = "<group>"; };
 		DB487F2A1F4ABCF9000FF85B /* AdvertiseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvertiseViewController.xib; sourceTree = "<group>"; };
+		DBD8E4491F5FCF0E00FA3882 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		DBD8E44B1F5FCFDC00FA3882 /* TopicTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTitle.swift; sourceTree = "<group>"; };
+		DBD8E44D1F5FD1A400FA3882 /* LQFTopicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFTopicVC.swift; sourceTree = "<group>"; };
 		DBF8A50F1F5E9BE80039A606 /* LQFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFNavigationController.swift; sourceTree = "<group>"; };
 		DBF8A5121F5EA13C0039A606 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DBF8A5191F5EA68F0039A606 /* LQFHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFHomeVC.swift; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 			children = (
 				DBF8A5111F5EA0FA0039A606 /* Category */,
 				DB487F281F4ABCCB000FF85B /* Controller */,
+				DBD8E4481F5FCEAE00FA3882 /* Tools */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -130,6 +137,14 @@
 				DBF8A50F1F5E9BE80039A606 /* LQFNavigationController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBD8E4481F5FCEAE00FA3882 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DBD8E4491F5FCF0E00FA3882 /* NetworkTool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		DBF8A5111F5EA0FA0039A606 /* Category */ = {
@@ -155,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				DBF8A5191F5EA68F0039A606 /* LQFHomeVC.swift */,
+				DBD8E44D1F5FD1A400FA3882 /* LQFTopicVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +178,7 @@
 		DBF8A5171F5EA6680039A606 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DBD8E44B1F5FCFDC00FA3882 /* TopicTitle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,9 +352,12 @@
 			files = (
 				DBF8A5201F5EBBDA0039A606 /* UIView+Extension.swift in Sources */,
 				DBF8A5131F5EA13C0039A606 /* UIColor+Extension.swift in Sources */,
+				DBD8E44E1F5FD1A400FA3882 /* LQFTopicVC.swift in Sources */,
 				DBF8A51E1F5EBAF50039A606 /* HomeSearchBar.swift in Sources */,
 				DB216C901F46EFDB00BE9D49 /* LTodaySwift.xcdatamodeld in Sources */,
+				DBD8E44A1F5FCF0E00FA3882 /* NetworkTool.swift in Sources */,
 				DBF8A51C1F5EA97E0039A606 /* HomeNavigationBar.swift in Sources */,
+				DBD8E44C1F5FCFDC00FA3882 /* TopicTitle.swift in Sources */,
 				DB1519821F56B0460052BE7A /* LqfTabBarVC.swift in Sources */,
 				DB487F2B1F4ABCF9000FF85B /* AdvertiseViewController.swift in Sources */,
 				DBF8A5101F5E9BE80039A606 /* LQFNavigationController.swift in Sources */,
