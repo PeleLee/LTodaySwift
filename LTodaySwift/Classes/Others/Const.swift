@@ -26,6 +26,12 @@ let BASE_URL = "http://lf.snssdk.com/"
 
 
 let kMargin: CGFloat = 15.0
-		
+
+let kNavBarHeight: CGFloat = 64.0
+
+/// 导航栏高度
+let kTabBarHeight: CGFloat = 49.0
+
+
 let isNight = "isNight"
 		

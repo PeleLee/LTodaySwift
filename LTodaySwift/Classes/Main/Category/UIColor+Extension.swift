@@ -9,12 +9,20 @@
 import UIKit
 
 extension UIColor {
+    
+    ///RGB
     convenience init(r: CGFloat, g: CGFloat, b: CGFloat, alpha: CGFloat = 1.0) {
         self.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: alpha)
     }
     
+    
+    /// 背景灰
     class func globalBackgroundColor() -> UIColor {
         return UIColor(r: 248, g: 249, b: 247)
     }
-    
+ 
+    ///红色
+    class func globalRedColor() -> UIColor {
+        return UIColor(r: 210, g: 63, b: 66)
+    }
 }

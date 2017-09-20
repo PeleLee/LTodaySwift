@@ -12,9 +12,16 @@
 		DB216C8D1F46EFDA00BE9D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB216C8B1F46EFDA00BE9D49 /* Main.storyboard */; };
 		DB216C901F46EFDB00BE9D49 /* LTodaySwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB216C8E1F46EFDB00BE9D49 /* LTodaySwift.xcdatamodeld */; };
 		DB216C921F46EFDB00BE9D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB216C911F46EFDB00BE9D49 /* Assets.xcassets */; };
+		DB251DF81F70E99D00DA1BEF /* HomeTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB251DF71F70E99D00DA1BEF /* HomeTopicCell.swift */; };
+		DB251DFA1F70FC0100DA1BEF /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB251DF91F70FC0100DA1BEF /* HomePageView.swift */; };
+		DB251DFD1F71012C00DA1BEF /* LQFHomeAddCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB251DFB1F71012C00DA1BEF /* LQFHomeAddCategoryVC.swift */; };
+		DB251DFE1F71012C00DA1BEF /* LQFHomeAddCategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB251DFC1F71012C00DA1BEF /* LQFHomeAddCategoryVC.xib */; };
+		DB251E001F71072100DA1BEF /* LQFHomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB251DFF1F71072100DA1BEF /* LQFHomeTitleView.swift */; };
 		DB487F251F4ABAC6000FF85B /* SwiftTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB487F241F4ABAC6000FF85B /* SwiftTheme.framework */; };
 		DB487F2B1F4ABCF9000FF85B /* AdvertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB487F291F4ABCF9000FF85B /* AdvertiseViewController.swift */; };
 		DB487F2C1F4ABCF9000FF85B /* AdvertiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB487F2A1F4ABCF9000FF85B /* AdvertiseViewController.xib */; };
+		DB5A2F991F72629700629823 /* LQFHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2F971F72629700629823 /* LQFHomeCollectionViewCell.swift */; };
+		DB5A2F9A1F72629700629823 /* LQFHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2F981F72629700629823 /* LQFHomeCollectionViewCell.xib */; };
 		DBD8E44A1F5FCF0E00FA3882 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E4491F5FCF0E00FA3882 /* NetworkTool.swift */; };
 		DBD8E44C1F5FCFDC00FA3882 /* TopicTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E44B1F5FCFDC00FA3882 /* TopicTitle.swift */; };
 		DBD8E44E1F5FD1A400FA3882 /* LQFTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E44D1F5FD1A400FA3882 /* LQFTopicVC.swift */; };
@@ -39,9 +46,16 @@
 		DB216C8C1F46EFDA00BE9D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB216C8F1F46EFDB00BE9D49 /* LTodaySwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LTodaySwift.xcdatamodel; sourceTree = "<group>"; };
 		DB216C911F46EFDB00BE9D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB251DF71F70E99D00DA1BEF /* HomeTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTopicCell.swift; sourceTree = "<group>"; };
+		DB251DF91F70FC0100DA1BEF /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		DB251DFB1F71012C00DA1BEF /* LQFHomeAddCategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFHomeAddCategoryVC.swift; sourceTree = "<group>"; };
+		DB251DFC1F71012C00DA1BEF /* LQFHomeAddCategoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQFHomeAddCategoryVC.xib; sourceTree = "<group>"; };
+		DB251DFF1F71072100DA1BEF /* LQFHomeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFHomeTitleView.swift; sourceTree = "<group>"; };
 		DB487F241F4ABAC6000FF85B /* SwiftTheme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTheme.framework; path = "../../Library/Developer/Xcode/DerivedData/LTodaySwift-hdbkmuggiarzlwdpjrtosvviahdi/Build/Products/Debug-iphonesimulator/SwiftTheme/SwiftTheme.framework"; sourceTree = "<group>"; };
 		DB487F291F4ABCF9000FF85B /* AdvertiseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertiseViewController.swift; sourceTree = "<group>"; };
 		DB487F2A1F4ABCF9000FF85B /* AdvertiseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvertiseViewController.xib; sourceTree = "<group>"; };
+		DB5A2F971F72629700629823 /* LQFHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		DB5A2F981F72629700629823 /* LQFHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQFHomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		DBD8E4491F5FCF0E00FA3882 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		DBD8E44B1F5FCFDC00FA3882 /* TopicTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTitle.swift; sourceTree = "<group>"; };
 		DBD8E44D1F5FD1A400FA3882 /* LQFTopicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFTopicVC.swift; sourceTree = "<group>"; };
@@ -171,6 +185,8 @@
 			children = (
 				DBF8A5191F5EA68F0039A606 /* LQFHomeVC.swift */,
 				DBD8E44D1F5FD1A400FA3882 /* LQFTopicVC.swift */,
+				DB251DFB1F71012C00DA1BEF /* LQFHomeAddCategoryVC.swift */,
+				DB251DFC1F71012C00DA1BEF /* LQFHomeAddCategoryVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +204,11 @@
 			children = (
 				DBF8A51B1F5EA97E0039A606 /* HomeNavigationBar.swift */,
 				DBF8A51D1F5EBAF50039A606 /* HomeSearchBar.swift */,
+				DB251DF71F70E99D00DA1BEF /* HomeTopicCell.swift */,
+				DB251DF91F70FC0100DA1BEF /* HomePageView.swift */,
+				DB251DFF1F71072100DA1BEF /* LQFHomeTitleView.swift */,
+				DB5A2F971F72629700629823 /* LQFHomeCollectionViewCell.swift */,
+				DB5A2F981F72629700629823 /* LQFHomeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,11 +308,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB216C921F46EFDB00BE9D49 /* Assets.xcassets in Resources */,
+				DB5A2F9A1F72629700629823 /* LQFHomeCollectionViewCell.xib in Resources */,
 				DB487F2C1F4ABCF9000FF85B /* AdvertiseViewController.xib in Resources */,
 				DBF8A52B1F5EC5350039A606 /* Info.plist in Resources */,
 				DBF8A52F1F5EC7820039A606 /* night_theme.plist in Resources */,
 				DB216C8D1F46EFDA00BE9D49 /* Main.storyboard in Resources */,
 				DBF8A52E1F5EC7820039A606 /* default_theme.plist in Resources */,
+				DB251DFE1F71012C00DA1BEF /* LQFHomeAddCategoryVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +373,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB251DF81F70E99D00DA1BEF /* HomeTopicCell.swift in Sources */,
+				DB5A2F991F72629700629823 /* LQFHomeCollectionViewCell.swift in Sources */,
 				DBF8A5201F5EBBDA0039A606 /* UIView+Extension.swift in Sources */,
+				DB251E001F71072100DA1BEF /* LQFHomeTitleView.swift in Sources */,
 				DBF8A5131F5EA13C0039A606 /* UIColor+Extension.swift in Sources */,
 				DBD8E44E1F5FD1A400FA3882 /* LQFTopicVC.swift in Sources */,
 				DBF8A51E1F5EBAF50039A606 /* HomeSearchBar.swift in Sources */,
@@ -363,6 +389,8 @@
 				DBF8A5101F5E9BE80039A606 /* LQFNavigationController.swift in Sources */,
 				DBF8A5291F5EC5350039A606 /* AppDelegate.swift in Sources */,
 				DBF8A51A1F5EA68F0039A606 /* LQFHomeVC.swift in Sources */,
+				DB251DFA1F70FC0100DA1BEF /* HomePageView.swift in Sources */,
+				DB251DFD1F71012C00DA1BEF /* LQFHomeAddCategoryVC.swift in Sources */,
 				DBF8A52A1F5EC5350039A606 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

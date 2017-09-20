@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IBAnimatable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LTodaySwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6B0D7C19E1C3AECC395437557B9CC269</key>
+		<key>159833BA77EE0635AFBF7A7E5A19F533</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DB37FDD6D9682249FC26FBD3DF9EBE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57928A327B4A53D2781BD9AB919D43B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83E47ABC225871216E36391BFA78EE5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,17 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B701BA3543DD1CF00E6107EB315A3538</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CFE70ABAEC4EC8D00A6D5D0410463556</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F27EE4C86103E7EA4AA1BB6B3F0A4C66</key>
+		<key>ED6AE9C9032747AB1C5902140849E2A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

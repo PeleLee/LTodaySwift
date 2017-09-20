@@ -10,6 +10,28 @@ import UIKit
 
 extension UIView {
     
+    var x: CGFloat {
+        get {
+            return frame.origin.x
+        }
+        set {
+            var tmpFrame: CGRect = frame
+            tmpFrame.origin.x    = newValue
+            frame                = tmpFrame
+        }
+    }
+    
+    var y: CGFloat {
+        get {
+            return frame.origin.y
+        }
+        set {
+            var tmpFrame: CGRect = frame
+            tmpFrame.origin.y    = newValue
+            frame                = tmpFrame
+        }
+    }
+    
     var height: CGFloat {
         get {
             return frame.size.height
@@ -33,5 +55,26 @@ extension UIView {
         }
     }
     
+    var centerX: CGFloat {
+        get {
+            return center.x
+        }
+        set {
+            var tmpCenter: CGPoint = center
+            tmpCenter.x = newValue
+            center = tmpCenter
+        }
+    }
+    
+    var centerY: CGFloat {
+        get {
+            return center.y
+        }
+        set {
+            var tmpCenter: CGPoint = center
+            tmpCenter.y = newValue
+            center = tmpCenter
+        }
+    }
     
 }
