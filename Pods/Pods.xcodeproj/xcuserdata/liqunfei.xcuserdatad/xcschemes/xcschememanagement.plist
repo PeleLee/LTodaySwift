@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LTodaySwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,7 +47,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>159833BA77EE0635AFBF7A7E5A19F533</key>
+		<key>2214B1EB6FB9569E46F8EB8947B753EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>57928A327B4A53D2781BD9AB919D43B8</key>
+		<key>6348E04E26BA0402D4B0172B0858698C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83E47ABC225871216E36391BFA78EE5A</key>
+		<key>6E302435E6C1483BB09887AD05A434EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7835823E01449EA9A0E77BCD5BA9A643</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ED6AE9C9032747AB1C5902140849E2A9</key>
+		<key>E14A62900910444707A5504D25EC98DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9104C08CD36D97B158E001FF99A9B0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

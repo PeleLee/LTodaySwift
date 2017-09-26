@@ -27,6 +27,9 @@ class LQFHomeAddCategoryVC: AnimatableModalViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func closeAddCategoryButtonClicked(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

@@ -62,4 +62,50 @@ class NetworkTool {
         }
     }
     
+    ///获取首页不同分类的新闻内容(和视频内容使用一个接口)
+    class func loadHomeCategoryNewsFeed(category: String, completionHandler:@escaping (_ nowTime: TimeInterval, _ newsTopic: [WeitoutiaoModel]) -> ()) {
+        var url = String()
+        var params = [String: String]()
+        if category == "image_ppmm" {
+            //美女分类
+            url = "https://is.snssdk.com/api/news/feed/v58/?"
+            params = ["device_id": "24694334167",
+                      "category": category,
+                      "iid": "13142832815",
+                      "device_platform": "iphone"];
+        }
+        else {
+            url = BASE_URL + "api/news/feed/v39/?"
+            params = ["device_id": device_id,
+                      "category": category,
+                      "iid": IID,
+                      "device_platform": "iphone"]
+        }
+        let nowTime = NSDate().timeIntervalSince1970
+        Alamofire.request(url, parameters: params).responseJSON { (response) in
+            guard response.result.isSuccess else {
+                return
+            }
+            if let value = response.result.value {
+                let json = JSON(value)
+                guard let dataJSONs = json["data"].array else {
+                    return
+                }
+                var topics = [WeitoutiaoModel]()
+                for data in dataJSONs {
+                    if let content = data["content"].string {
+                        let contentData: NSData = content.data(using: String.Encoding.utf8)! as NSData
+                        do {
+                            let dict = try JSONSerialization.jsonObject(with: contentData as Data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
+                            let topic = WeitoutiaoModel(dict: dict as! [String:AnyObject])
+                            topics.append(topic)
+                        } catch {
+                        
+                        }
+                    }
+                }
+                completionHandler(nowTime, topics)
+            }
+        }
+    }
 }

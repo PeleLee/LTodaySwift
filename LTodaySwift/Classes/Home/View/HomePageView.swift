@@ -80,6 +80,7 @@ extension HomePageView {
         titleView.snp.makeConstraints { (make) in
             make.top.left.right.equalTo(self)
             make.height.equalTo(40)
+            make.bottom.equalTo(collectionView.snp.top)
         }
         
         collectionView.snp.makeConstraints { (make) in

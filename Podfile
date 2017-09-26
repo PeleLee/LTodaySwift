@@ -7,4 +7,6 @@ target 'LTodaySwift' do
     pod 'Alamofire', '~> 4.5.0'
     pod 'SwiftyJSON', '~> 3.1.4'
     pod 'IBAnimatable'
+    pod 'MJRefresh'
+    pod 'SVProgressHUD', '~> 2.1.2'
 end

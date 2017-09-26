@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Add CategoryVC-->
+        <scene sceneID="QlQ-sj-ENA">
+            <objects>
+                <viewController storyboardIdentifier="LQFHomeAddCategoryVC" id="eEs-6M-am0" customClass="LQFHomeAddCategoryVC" customModule="LTodaySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4N6-iL-dAB"/>
+                        <viewControllerLayoutGuide type="bottom" id="br8-E9-ucN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QCQ-0e-no4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKU-sK-eMV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdH-5c-ori">
+                                        <rect key="frame" x="10" y="7" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="aIZ-Zi-Sbn"/>
+                                            <constraint firstAttribute="width" constant="30" id="vcG-RG-kB7"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="titlebar_close_24x24_"/>
+                                        <connections>
+                                            <action selector="closeAddCategoryButtonClicked:" destination="eEs-6M-am0" eventType="touchUpInside" id="Su3-m3-BUZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JdH-5c-ori" firstAttribute="centerY" secondItem="QKU-sK-eMV" secondAttribute="centerY" id="DRz-4O-OZW"/>
+                                    <constraint firstAttribute="height" constant="44" id="Isb-CX-6Bp"/>
+                                    <constraint firstItem="JdH-5c-ori" firstAttribute="leading" secondItem="QKU-sK-eMV" secondAttribute="leading" constant="10" id="yJW-CH-tgi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QKU-sK-eMV" firstAttribute="top" secondItem="4N6-iL-dAB" secondAttribute="bottom" id="RZ4-nQ-dHv"/>
+                            <constraint firstItem="QKU-sK-eMV" firstAttribute="leading" secondItem="QCQ-0e-no4" secondAttribute="leadingMargin" constant="-16" id="jDq-pq-LJR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QKU-sK-eMV" secondAttribute="trailing" constant="-16" id="v1G-Ck-SDg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7v7-cZ-fBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="titlebar_close_24x24_" width="24" height="24"/>
+    </resources>
+</document>

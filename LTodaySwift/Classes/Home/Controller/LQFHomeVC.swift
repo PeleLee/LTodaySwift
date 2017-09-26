@@ -69,7 +69,7 @@ extension LQFHomeVC {
             make.top.equalTo(view).offset(kNavBarHeight)
         }
         
-        //添加通知的目的:待研究
+        //添加通知 监听加号按钮
         NotificationCenter.default.addObserver(self, selector: #selector(homeTitleAddButtonClicked(notification:)), name: NSNotification.Name(rawValue: "homeTitleAddButtonClicked"), object: nil)
     }
     
@@ -86,5 +86,11 @@ extension LQFHomeVC {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+}
+
+extension LQFHomeVC: UITextFieldDelegate {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
     }
 }
