@@ -35,6 +35,12 @@
 		DBBAF4DE1F7A28E200BD0539 /* VideoTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBBAF4DC1F7A28E200BD0539 /* VideoTopicCell.xib */; };
 		DBBAF4E11F7A2BBA00BD0539 /* RefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBAF4E01F7A2BBA00BD0539 /* RefreshHeader.swift */; };
 		DBBAF4E31F7A2D4500BD0539 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBAF4E21F7A2D4500BD0539 /* MJRefresh.framework */; };
+		DBCF39D31F7B986D00B6A021 /* LQFFollowDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF39D11F7B986D00B6A021 /* LQFFollowDetailVC.swift */; };
+		DBCF39D41F7B986D00B6A021 /* LQFFollowDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCF39D21F7B986D00B6A021 /* LQFFollowDetailVC.xib */; };
+		DBCF39D71F7B9BFB00B6A021 /* LQFToutiaohaoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF39D51F7B9BFB00B6A021 /* LQFToutiaohaoCell.swift */; };
+		DBCF39D81F7B9BFB00B6A021 /* LQFToutiaohaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCF39D61F7B9BFB00B6A021 /* LQFToutiaohaoCell.xib */; };
+		DBCF39DB1F7BA01000B6A021 /* LQFHomeJokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF39D91F7BA01000B6A021 /* LQFHomeJokeCell.swift */; };
+		DBCF39DC1F7BA01000B6A021 /* LQFHomeJokeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCF39DA1F7BA01000B6A021 /* LQFHomeJokeCell.xib */; };
 		DBD8E44A1F5FCF0E00FA3882 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E4491F5FCF0E00FA3882 /* NetworkTool.swift */; };
 		DBD8E44C1F5FCFDC00FA3882 /* TopicTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E44B1F5FCFDC00FA3882 /* TopicTitle.swift */; };
 		DBD8E44E1F5FD1A400FA3882 /* LQFTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8E44D1F5FD1A400FA3882 /* LQFTopicVC.swift */; };
@@ -82,6 +88,12 @@
 		DBBAF4DC1F7A28E200BD0539 /* VideoTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoTopicCell.xib; sourceTree = "<group>"; };
 		DBBAF4E01F7A2BBA00BD0539 /* RefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeader.swift; sourceTree = "<group>"; };
 		DBBAF4E21F7A2D4500BD0539 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "../../Library/Developer/Xcode/DerivedData/LTodaySwift-hdbkmuggiarzlwdpjrtosvviahdi/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework"; sourceTree = "<group>"; };
+		DBCF39D11F7B986D00B6A021 /* LQFFollowDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFFollowDetailVC.swift; sourceTree = "<group>"; };
+		DBCF39D21F7B986D00B6A021 /* LQFFollowDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQFFollowDetailVC.xib; sourceTree = "<group>"; };
+		DBCF39D51F7B9BFB00B6A021 /* LQFToutiaohaoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFToutiaohaoCell.swift; sourceTree = "<group>"; };
+		DBCF39D61F7B9BFB00B6A021 /* LQFToutiaohaoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQFToutiaohaoCell.xib; sourceTree = "<group>"; };
+		DBCF39D91F7BA01000B6A021 /* LQFHomeJokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFHomeJokeCell.swift; sourceTree = "<group>"; };
+		DBCF39DA1F7BA01000B6A021 /* LQFHomeJokeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQFHomeJokeCell.xib; sourceTree = "<group>"; };
 		DBD8E4491F5FCF0E00FA3882 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		DBD8E44B1F5FCFDC00FA3882 /* TopicTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTitle.swift; sourceTree = "<group>"; };
 		DBD8E44D1F5FD1A400FA3882 /* LQFTopicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQFTopicVC.swift; sourceTree = "<group>"; };
@@ -159,6 +171,7 @@
 				DB84CB2D1F78F938000D500C /* Weitoutiao */,
 				DB84CB391F790A7D000D500C /* Video */,
 				DB487F271F4ABC95000FF85B /* Main */,
+				DBCF39CD1F7B97FD00B6A021 /* Mine */,
 				DBF8A5241F5EC5350039A606 /* Others */,
 			);
 			path = Classes;
@@ -261,6 +274,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DBCF39CD1F7B97FD00B6A021 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DBCF39CE1F7B981F00B6A021 /* Controller */,
+				DBCF39CF1F7B981F00B6A021 /* Model */,
+				DBCF39D01F7B981F00B6A021 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		DBCF39CE1F7B981F00B6A021 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBCF39D11F7B986D00B6A021 /* LQFFollowDetailVC.swift */,
+				DBCF39D21F7B986D00B6A021 /* LQFFollowDetailVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBCF39CF1F7B981F00B6A021 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBCF39D01F7B981F00B6A021 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DBD8E4481F5FCEAE00FA3882 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +368,10 @@
 				DB84CB291F78D569000D500C /* HomeTopicCell.swift */,
 				DB84CB2A1F78D569000D500C /* HomeTopicCell.xib */,
 				DB84CB371F7901FA000D500C /* LQFTTHHeaderView.swift */,
+				DBCF39D51F7B9BFB00B6A021 /* LQFToutiaohaoCell.swift */,
+				DBCF39D61F7B9BFB00B6A021 /* LQFToutiaohaoCell.xib */,
+				DBCF39D91F7BA01000B6A021 /* LQFHomeJokeCell.swift */,
+				DBCF39DA1F7BA01000B6A021 /* LQFHomeJokeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,10 +473,13 @@
 				DB216C921F46EFDB00BE9D49 /* Assets.xcassets in Resources */,
 				DB5A2F9A1F72629700629823 /* LQFHomeCollectionViewCell.xib in Resources */,
 				DB28FC851F73A59E00FF8D2F /* LQFHomeAddCategoryVC.storyboard in Resources */,
+				DBCF39D41F7B986D00B6A021 /* LQFFollowDetailVC.xib in Resources */,
 				DB487F2C1F4ABCF9000FF85B /* AdvertiseViewController.xib in Resources */,
+				DBCF39DC1F7BA01000B6A021 /* LQFHomeJokeCell.xib in Resources */,
 				DBF8A52B1F5EC5350039A606 /* Info.plist in Resources */,
 				DBF8A52F1F5EC7820039A606 /* night_theme.plist in Resources */,
 				DB19982E1F7A5993001353BC /* ConcernToutiaohaoVC.xib in Resources */,
+				DBCF39D81F7B9BFB00B6A021 /* LQFToutiaohaoCell.xib in Resources */,
 				DB84CB2C1F78D569000D500C /* HomeTopicCell.xib in Resources */,
 				DB216C8D1F46EFDA00BE9D49 /* Main.storyboard in Resources */,
 				DBBAF4DE1F7A28E200BD0539 /* VideoTopicCell.xib in Resources */,
@@ -508,10 +561,13 @@
 				DB487F2B1F4ABCF9000FF85B /* AdvertiseViewController.swift in Sources */,
 				DBF8A5101F5E9BE80039A606 /* LQFNavigationController.swift in Sources */,
 				DB84CB2B1F78D569000D500C /* HomeTopicCell.swift in Sources */,
+				DBCF39DB1F7BA01000B6A021 /* LQFHomeJokeCell.swift in Sources */,
+				DBCF39D71F7B9BFB00B6A021 /* LQFToutiaohaoCell.swift in Sources */,
 				DBF8A5291F5EC5350039A606 /* AppDelegate.swift in Sources */,
 				DB19982D1F7A5993001353BC /* ConcernToutiaohaoVC.swift in Sources */,
 				DBF8A51A1F5EA68F0039A606 /* LQFHomeVC.swift in Sources */,
 				DB251DFA1F70FC0100DA1BEF /* HomePageView.swift in Sources */,
+				DBCF39D31F7B986D00B6A021 /* LQFFollowDetailVC.swift in Sources */,
 				DB251DFD1F71012C00DA1BEF /* LQFHomeAddCategoryVC.swift in Sources */,
 				DBF8A52A1F5EC5350039A606 /* Const.swift in Sources */,
 				DB84CB321F78F9B3000D500C /* WeitoutiaoModel.swift in Sources */,

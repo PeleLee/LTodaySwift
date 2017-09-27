@@ -1,7 +1,11 @@
 PODS:
   - Alamofire (4.5.0)
   - IBAnimatable (4.1.0)
+  - Kingfisher (3.10.4)
   - MJRefresh (3.1.12)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxSwift (3.6.1)
   - SnapKit (3.2.0)
   - SVProgressHUD (2.1.2)
   - SwiftTheme (0.3.3)
@@ -10,7 +14,10 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.5.0)
   - IBAnimatable
+  - Kingfisher (~> 3.10.4)
   - MJRefresh
+  - RxCocoa (~> 3.6.1)
+  - RxSwift (~> 3.6.1)
   - SnapKit (~> 3.2.0)
   - SVProgressHUD (~> 2.1.2)
   - SwiftTheme
@@ -19,12 +26,15 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   IBAnimatable: 0fd2c9fd38c4798d71bcc18dbd87d473a7df2577
+  Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftTheme: 85f84747a48749b5b3df7c3e96fc0b1d45677d30
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: b9980412d0271da51cb9b5175e47ee321ccd7445
+PODFILE CHECKSUM: a132133a34303589ae0390ad921eb100a84a5f50
 
 COCOAPODS: 1.2.1

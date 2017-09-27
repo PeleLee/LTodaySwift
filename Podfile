@@ -9,4 +9,7 @@ target 'LTodaySwift' do
     pod 'IBAnimatable'
     pod 'MJRefresh'
     pod 'SVProgressHUD', '~> 2.1.2'
+    pod 'Kingfisher', '~> 3.10.4'
+    pod 'RxSwift', '~> 3.6.1'
+    pod 'RxCocoa', '~> 3.6.1'
 end

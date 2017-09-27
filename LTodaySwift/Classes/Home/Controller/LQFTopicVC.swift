@@ -9,12 +9,15 @@
 import UIKit
 import MJRefresh
 import SVProgressHUD
+import RxSwift
+import RxCocoa
 
 class LQFTopicVC: UIViewController {
 
-    //记录点击的顶部标题
-    var topicTitle: TopicTitle?
+    fileprivate let disposeBag = DisposeBag()
     
+    ///记录点击的顶部标题
+    var topicTitle: TopicTitle?
     /// 存放新闻主题的数组
     fileprivate var newsTopics = [WeitoutiaoModel]()
     
@@ -112,16 +115,59 @@ extension LQFTopicVC: UITableViewDelegate, UITableViewDataSource {
         else if topicTitle?.category == "essay_joke" {
             //段子
             let weitoutiao = newsTopics[indexPath.row]
-//            return weitoutiao.jo
+            return weitoutiao.jokeCellHeight!
         }
-        return 0
+        else if topicTitle?.category == "组图" {
+            //组图
+            let weitoutiao = newsTopics[indexPath.row]
+            return weitoutiao.imageCellHeight!
+        }
+        else if topicTitle?.category == "image_ppmm" {
+            //美女组图
+            let weitoutiao = newsTopics[indexPath.row]
+            return weitoutiao.girlCellHeight!
+        }
+        let weitoutiao = newsTopics[indexPath.row]
+        return weitoutiao.homeCellHeight!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        if topicTitle!.category == "subscription" {
+            return 10
+        }
+        else {
+            return newsTopics.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if topicTitle!.category == "video" {
+            //视频
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VideoTopicCell.self), for: indexPath) as! VideoTopicCell
+            cell.videoTopic = newsTopics[indexPath.row]
+            let controlEvent = UIControlEvents.touchUpInside
+            cell.headCoverButton.rx.controlEvent(controlEvent).subscribe(onNext: { [weak self] in
+                let userVC = LQFFollowDetailVC()
+                userVC.userid = cell.videoTopic!.media_info!.user_id!
+                self!.navigationController!.pushViewController(userVC, animated: true)
+            })
+            .addDisposableTo(disposeBag)
+            
+            //待
+            return cell
+        }
+        else if topicTitle?.category == "subscription" {
+            //头条号
+            let nibNameStr = String(describing: LQFToutiaohaoCell.self)
+            let cell = Bundle.main.loadNibNamed(nibNameStr, owner: nibNameStr, options: nil)?.last as! LQFToutiaohaoCell
+            return cell
+        }
+        else if topicTitle?.category == "essay_joke" {
+            //段子
+            
+        }
+        
         let cell = UITableViewCell()
         return cell
     }

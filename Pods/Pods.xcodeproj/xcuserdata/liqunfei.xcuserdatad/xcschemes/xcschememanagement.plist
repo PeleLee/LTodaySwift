@@ -14,12 +14,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-LTodaySwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,7 +62,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2214B1EB6FB9569E46F8EB8947B753EB</key>
+		<key>1EF4C58A8EAB57040E68E794D57E4CE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F0C0F810568D3E82219429D9D870F04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40B3F5A2E602BC6FCC3F545D493CCB47</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,17 +82,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6348E04E26BA0402D4B0172B0858698C</key>
+		<key>67DBE2988943F83B152A0BCB54E0B949</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E302435E6C1483BB09887AD05A434EC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7835823E01449EA9A0E77BCD5BA9A643</key>
+		<key>8667FC0B0ED394BB393B972CD3087348</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DA45AA196B30A5C2FF775F611669FD7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E14A62900910444707A5504D25EC98DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E9104C08CD36D97B158E001FF99A9B0E</key>
+		<key>F9D5B7D588655CEA82907D4119EB78CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB6E7D58F09F9318597E9FAB99BD4C1F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
