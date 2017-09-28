@@ -165,10 +165,26 @@ extension LQFTopicVC: UITableViewDelegate, UITableViewDataSource {
         }
         else if topicTitle?.category == "essay_joke" {
             //段子
+            let nibName = String(describing: LQFHomeJokeCell.self)
             
+            let cell = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)?.last as! LQFHomeJokeCell
+            return cell
         }
-        
-        let cell = UITableViewCell()
+        else if topicTitle?.category == "组图" {
+            let nibName = String(describing: LQFHomeImageTableCell.self)
+            let cell = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)?.last as! LQFHomeImageTableCell
+            cell.homeImage = newsTopics[indexPath.row]
+        }
+        else if topicTitle?.category == "image_ppmm" {
+            //组图
+            let nibName = String(describing: LQFHomeJokeCell.self)
+            let cell = Bundle.main.loadNibNamed(nibName, owner: nibName, options: nil)?.last as! LQFHomeJokeCell
+            return cell
+        }
+       
+        let nibName = String(describing: HomeTopicCell.self)
+        let cell = tableView.dequeueReusableCell(withIdentifier: nibName, for: indexPath) as! HomeTopicCell
+        cell.weitoutiao = newsTopics[indexPath.row]
         return cell
     }
     

@@ -21,6 +21,10 @@ extension UIColor {
         return UIColor(r: 248, g: 249, b: 247)
     }
  
+    class func globalBlueColor() -> UIColor {
+        return UIColor(r: 76, g: 173, b: 253)
+    }
+    
     ///红色
     class func globalRedColor() -> UIColor {
         return UIColor(r: 210, g: 63, b: 66)

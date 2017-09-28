@@ -10,6 +10,16 @@ import UIKit
 
 class LQFToutiaohaoCell: UITableViewCell {
 
+    @IBOutlet weak var iconImageView: UIImageView!
+    
+    @IBOutlet weak var concernNameLabel: UILabel!
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var badgeLabel: UILabel!
+    
+    @IBOutlet weak var timeLabel: UILabel!    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

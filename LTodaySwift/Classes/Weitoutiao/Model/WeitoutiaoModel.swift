@@ -104,11 +104,70 @@ class WeitoutiaoModel: NSObject {
         }
     }
     
+    /// 置顶
+    var label: String?    
+    
     var large_image_list = [WTTLargeImageList]()
     
     var user_info: WTTUser?
     
     var comment_count: Int?
+    
+    var behot_time: TimeInterval?
+    var publich_time: TimeInterval?
+    var create_time:TimeInterval?
+    var createTime: String? {
+        get {
+            return "xxxxxxxxxxxxx"
+            /*
+            //创建时间
+            var createDate: Date?
+            if let publicTime = publich_time {
+                createDate = Date(timeIntervalSince1970: publicTime)
+            }
+            else if let createTime = create_time {
+                createDate = Date(timeIntervalSince1970: createTime)
+            }
+            else if behot_time != nil {
+                createDate = Date(timeIntervalSince1970: behot_time!)
+            }
+            let fmt = DateFormatter()
+            fmt.locale = Locale(identifier: "zh_CN")
+            fmt.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            //当前时间
+            let now = Date()
+            //日历
+            let calendar = Calendar.current
+            let comps: DateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: createDate!, to: now)
+            guard (createDate?.isYesterday())! else {
+                //今年
+                fmt.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                return fmt.string(from: createDate!)
+            }
+            
+            if (createDate?.isYesterday())! {
+                //昨天
+                fmt.dateFormat = "昨天 HH:mm"
+                return fmt.string(from: createDate!)
+            }
+            else if (createDate?.isToday())! {
+                if comps.hour! >= 1 {
+                    return String(format: "%.d小时前", comps.hour!)
+                }
+                else if comps.minute! >= 1 {
+                    return String(format: "%d分钟前", comps.minute!)
+                }
+                else {
+                    return "刚刚";
+                }
+            }
+            else {
+                fmt.dateFormat = "MM-dd HH:mm"
+                return fmt.string(from: createDate!)
+            }*/
+        }
+    }
+    
     
     /// 阅读量
     var read_count: Int?
@@ -144,6 +203,7 @@ class WeitoutiaoModel: NSObject {
         }
     }
     
+    var is_stick: Bool?
     
     var image_list = [WTTImageList]()
     var thumb_image_list = [WTTThumbImageList]()
@@ -158,13 +218,17 @@ class WeitoutiaoModel: NSObject {
     
     
     var middle_image: WTTMiddleImage?
+    var hot: Bool?    
+    
     var media_info: WTTMediaInfo?
     
+    var source: String?
     
     var video_detail_info: WTTVideoDetailInfo?
     var videoDuration: Int?
     var video_duration: String? {
         get {
+            ///格式化时间
             let hour = videoDuration! / 3600
             let minute = (videoDuration! / 60) % 60
             let second = videoDuration! % 60
@@ -175,14 +239,28 @@ class WeitoutiaoModel: NSObject {
         }
     }
     
+    var keywords: String?
+    
+    var gallary_image_count: Int?
+    var gallery_pic_count: Int?
+    
     
     init(dict: [String: AnyObject]) {
         impr_id = dict["impr_id"] as? String
         open_page_url = dict["open_page_url"] as? String
         
         if let largeImage = dict["large_image"] as? [String: AnyObject] {
-            
+            large_image = WTTDetailVideoLargeImage(dict: largeImage)
         }
+        gallary_image_count = dict["gallary_image_count"] as? Int
+        gallery_pic_count = dict["gallery_pic_count"] as? Int
+        is_stick = dict["is_stick"] as? Bool
+        label = dict["label"] as? String
+        keywords = dict["keywords"] as? String
+        
+        videoDuration = dict["video_duration"] as? Int
+        //续
+//        vid
     }
 }
 

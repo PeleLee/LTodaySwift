@@ -70,6 +70,13 @@
                     <constraint firstItem="61T-vz-LqX" firstAttribute="top" secondItem="4rY-Py-E4b" secondAttribute="top" constant="-5" id="wG7-nG-RQe"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="badgeLabel" destination="61T-vz-LqX" id="P9f-tH-tUK"/>
+                <outlet property="concernNameLabel" destination="Fhp-ll-Fgk" id="3En-up-YXj"/>
+                <outlet property="descriptionLabel" destination="k5H-ys-Mha" id="JhN-xJ-Q74"/>
+                <outlet property="iconImageView" destination="4rY-Py-E4b" id="DZ3-Js-2Ig"/>
+                <outlet property="timeLabel" destination="luJ-Kd-uRn" id="J7J-rI-gjg"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
