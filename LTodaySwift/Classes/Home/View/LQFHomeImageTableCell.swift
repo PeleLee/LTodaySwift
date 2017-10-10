@@ -30,6 +30,10 @@ class LQFHomeImageTableCell: UITableViewCell {
                 else {}
             }
             imageTitleLabel.text = homeImage!.title! as String
+            timeLabel.text = homeImage!.commentCount! + "评论"
+            if let mediaInfo = homeImage!.media_info {
+                usernameLabel.text = mediaInfo.name!
+            }
             
             let firstImage = homeImage?.image_list.first
             bgImageView.kf.setImage(with: URL(string: firstImage!.url!))

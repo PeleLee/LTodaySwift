@@ -38,7 +38,8 @@ class VideoTopicCell: UITableViewCell {
         headButton.layer.cornerRadius = 15
         headButton.layer.masksToBounds = true
         contentView.theme_backgroundColor = "colors.cellBackgroundColor"
-        titleLabel.theme_textColor = "colors.black"
+//        titleLabel.theme_textColor = "colors.black"
+        titleLabel.textColor = UIColor.white
         nameLable.theme_textColor = "colors.black"
         commentButton.theme_setTitleColor("colors.black", forState: .normal)
         concernButton.theme_setTitleColor("colors.black", forState: .normal)

@@ -16,16 +16,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYu-EB-MHh">
-                    <rect key="frame" x="165" y="75" width="46" height="44"/>
-                    <state key="normal" title="Button" image="new_play_video_44x44_"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                    <state key="normal" image="new_play_video_44x44_"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="qYu-EB-MHh" secondAttribute="bottom" constant="75" id="8fK-fv-Hgt"/>
-                <constraint firstItem="qYu-EB-MHh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="75" id="i1v-9S-xZY"/>
-                <constraint firstAttribute="trailing" secondItem="qYu-EB-MHh" secondAttribute="trailing" constant="164" id="i43-k7-eML"/>
-                <constraint firstItem="qYu-EB-MHh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="165" id="vLH-g3-o5x"/>
+                <constraint firstAttribute="bottom" secondItem="qYu-EB-MHh" secondAttribute="bottom" id="8fK-fv-Hgt"/>
+                <constraint firstItem="qYu-EB-MHh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i1v-9S-xZY"/>
+                <constraint firstAttribute="trailing" secondItem="qYu-EB-MHh" secondAttribute="trailing" id="i43-k7-eML"/>
+                <constraint firstItem="qYu-EB-MHh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vLH-g3-o5x"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

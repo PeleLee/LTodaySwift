@@ -42,13 +42,24 @@ class HomeTopicCell: UITableViewCell {
     
     var weitoutiao: WeitoutiaoModel? {
         didSet {
+            for subView in self.middleView.subviews {
+                subView.removeFromSuperview()
+            }
+            
+            rightButtonWidth.constant = 0
+            
+//            print("title:\(String(describing: weitoutiao?.title))")
+            
             if let title = weitoutiao?.title {
                 newsTitleLabel.text = String(title)
             }
+//            print("label:\(String(describing: weitoutiao?.label))")
+//            print("hot:\(String(describing: weitoutiao?.hot))")
             if let hot_label = weitoutiao!.label {
                 if hot_label == "置顶" {
                     hotLabel.isHidden = false
                     hotLabel.text = hot_label
+                    hotLabelWidth.constant = 30
                 }
                 else if hot_label == "广告" {
                     hotLabel.isHidden = false
@@ -80,6 +91,7 @@ class HomeTopicCell: UITableViewCell {
                 hotLabelWidth.constant = 0
             }
             
+//            print("source:\(String(describing: weitoutiao?.source))")
             if let source = weitoutiao!.source {
                 specicalLabelLeading.constant = 3
                 specicalLabel.isHidden = false
@@ -99,6 +111,7 @@ class HomeTopicCell: UITableViewCell {
                 if hasImage {
                     if weitoutiao!.image_list.count > 0 {
                         if weitoutiao!.image_list.count == 1 {
+//                            print("image url:\(String(describing: weitoutiao?.image_list.first?.url))")
                             rightButton.kf.setImage(with: URL(string: weitoutiao!.image_list.first!.url!), for: .normal)
                             rightButtonWidth.constant = (screenWidth - 2*kMargin - 20)/3
                             rightButton.layoutIfNeeded()
@@ -175,6 +188,7 @@ class HomeTopicCell: UITableViewCell {
         dislikeButton.theme_setImage("images.dislikeicon", forState: .normal)
         createTimeLabel.theme_textColor = "colors.mineOtherCellRightLabel"
         specicalLabel.theme_textColor = "colors.mineOtherCellRightLabel"
+        specicalLabel.backgroundColor = UIColor.white
         bottomLineView.theme_backgroundColor = "colors.separatorColor"
         contentView.theme_backgroundColor = "colors.cellBackgroundColor"
     }
@@ -211,8 +225,14 @@ extension HomeTopicCell: UICollectionViewDelegate,UICollectionViewDataSource,UIC
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing:ThumbCollectionViewCell.self), for: indexPath) as! ThumbCollectionViewCell
-//        let thumbImage = weitoutiao?.image_list[indexPath.item]
-        //MARK: 待
+        let thumbImage = weitoutiao?.image_list[indexPath.item]
+        cell.thumbImageURL = (thumbImage?.url)!
+        if let galleryCount = weitoutiao?.gallery_pic_count {
+            if indexPath.row == 2 {
+                cell.galleryCountLabel.text = String(describing: galleryCount)
+                cell.galleryCountLabel.isHidden = false
+            }
+        }
         return cell
     }
     

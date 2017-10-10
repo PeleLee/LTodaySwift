@@ -49,7 +49,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGt-74-C7G" userLabel="用户名">
                                 <rect key="frame" x="73.5" y="12.5" width="0.0" height="14.5"/>
-                                <color key="backgroundColor" red="0.97832602859999995" green="0.83125147219999995" blue="0.4234000128" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14.5" id="TYv-ka-Bpb"/>
                                 </constraints>
@@ -59,7 +58,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoZ-08-jod" userLabel="评论">
                                 <rect key="frame" x="76.5" y="12.5" width="0.0" height="14.5"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14.5" id="duG-Nd-3Bm"/>
                                 </constraints>
@@ -117,13 +115,12 @@
                         <rect key="frame" x="15" y="38.5" width="290" height="73.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-Mx-KaF" userLabel="右侧按钮">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-Mx-KaF" userLabel="右侧按钮">
                         <rect key="frame" x="305" y="12" width="0.0" height="140.5"/>
-                        <color key="backgroundColor" red="0.47843137250000001" green="0.82745098039999998" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" id="7hl-3f-X1K"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     </button>
                 </subviews>
                 <constraints>

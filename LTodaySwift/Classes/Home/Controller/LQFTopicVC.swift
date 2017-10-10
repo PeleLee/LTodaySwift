@@ -26,6 +26,8 @@ class LQFTopicVC: UIViewController {
         view.backgroundColor = UIColor.orange
         setupUI()
         
+//        print("*****topicTitle.category - \(String(describing: self.topicTitle?.category))")
+        
         if self.topicTitle!.category == "subscription" {
             tableView.tableHeaderView = toutiaohaoHearderView
         }
@@ -105,6 +107,7 @@ extension LQFTopicVC {
 extension LQFTopicVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         if topicTitle?.category == "video" {
             return screenHeight * 0.4
         }
@@ -174,6 +177,7 @@ extension LQFTopicVC: UITableViewDelegate, UITableViewDataSource {
             let nibName = String(describing: LQFHomeImageTableCell.self)
             let cell = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)?.last as! LQFHomeImageTableCell
             cell.homeImage = newsTopics[indexPath.row]
+            return cell
         }
         else if topicTitle?.category == "image_ppmm" {
             //组图
