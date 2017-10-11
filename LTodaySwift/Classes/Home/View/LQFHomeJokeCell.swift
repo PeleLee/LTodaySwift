@@ -24,9 +24,40 @@ class LQFHomeJokeCell: UITableViewCell {
     
     @IBOutlet weak var shareButton: UIButton!
     
+    var isJoke: Bool? {
+        didSet {
+            girlImageView.isHidden = isJoke!
+        }
+    }
+    
+    var joke: WeitoutiaoModel? {
+        didSet {
+            if let content = joke?.content {
+                jokeLabel.text = content as String
+            }
+            if joke?.comment_count == 0 {
+                commentButton.setTitle("评论", for: .normal)
+            }
+            else {
+                let str = String(describing: joke?.comment_count)
+                
+                commentButton.setTitle(str, for: .normal)
+            }
+            likeButton.setTitle(joke?.diggCount, for: .normal)
+            dislikeButton.setTitle(joke?.buryCount, for: .normal)
+            if let largeImage = joke?.large_image {
+                if let urlStr = largeImage.url {
+                    
+                    let url = URL(string: urlStr)
+                    
+                    girlImageView.kf.setImage(with: url)
+                }
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

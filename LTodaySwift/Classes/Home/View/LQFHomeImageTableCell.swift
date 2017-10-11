@@ -36,7 +36,11 @@ class LQFHomeImageTableCell: UITableViewCell {
             }
             
             let firstImage = homeImage?.image_list.first
-            bgImageView.kf.setImage(with: URL(string: firstImage!.url!))
+            if let urlStr = firstImage?.url {
+                let url = URL(string: urlStr)
+                bgImageView.kf.setImage(with: url)
+            }
+            
         }
     }
     

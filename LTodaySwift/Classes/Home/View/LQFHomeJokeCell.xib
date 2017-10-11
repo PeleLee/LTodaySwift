@@ -80,6 +80,7 @@
                             <constraint firstItem="qyi-4s-Wof" firstAttribute="leading" secondItem="8nu-v7-Uoj" secondAttribute="trailing" constant="15" id="CPo-JB-Bqh"/>
                             <constraint firstAttribute="bottom" secondItem="36l-To-1PB" secondAttribute="bottom" id="Iqy-yx-HHr"/>
                             <constraint firstItem="36l-To-1PB" firstAttribute="top" secondItem="qJh-wi-cse" secondAttribute="top" id="Mk5-sm-atA"/>
+                            <constraint firstItem="8nu-v7-Uoj" firstAttribute="top" secondItem="qJh-wi-cse" secondAttribute="top" id="Qua-pD-aZv"/>
                             <constraint firstItem="mgq-sJ-pqL" firstAttribute="top" secondItem="qJh-wi-cse" secondAttribute="top" id="QzR-2q-uJ3"/>
                             <constraint firstItem="zkr-iN-dto" firstAttribute="top" secondItem="qJh-wi-cse" secondAttribute="top" id="Tf6-6I-oRH"/>
                             <constraint firstAttribute="bottom" secondItem="qyi-4s-Wof" secondAttribute="bottom" id="dI6-Xt-jkn"/>
@@ -111,7 +112,6 @@
                     <constraint firstItem="Di7-7x-TSZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="U7e-TH-oHK"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Di7-7x-TSZ" secondAttribute="trailing" constant="7" id="Wrt-0w-qVQ"/>
                     <constraint firstItem="Di7-7x-TSZ" firstAttribute="top" secondItem="3mV-KV-S2C" secondAttribute="bottom" id="jyv-2I-2gQ"/>
-                    <constraint firstItem="8nu-v7-Uoj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="36.5" id="kAp-zs-ZZD"/>
                     <constraint firstItem="For-uJ-Rhd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="lSW-lv-hmP"/>
                     <constraint firstAttribute="trailingMargin" secondItem="For-uJ-Rhd" secondAttribute="trailing" constant="-8" id="qpO-W3-6u4"/>
                     <constraint firstItem="qJh-wi-cse" firstAttribute="top" secondItem="Di7-7x-TSZ" secondAttribute="bottom" constant="-0.5" id="vOI-Q9-Eab"/>

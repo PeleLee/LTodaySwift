@@ -17,3 +17,5 @@ Swift今日头条
              Pod第三方库[RxSwift](https://github.com/ReactiveX/RxSwift)、[RxCocoa]()
 * 2017.9.28: 完善LQFHomeJokeCell、
              首页推荐页面雏形已经出来，待完善，其他页面存在bug会崩溃，待优化
+* 2017.10.10: 完善首页大部分模块
+* 2017.10.11: 完善首页段子模块

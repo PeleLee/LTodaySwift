@@ -38,7 +38,7 @@ class LQFTopicVC: UIViewController {
                 self.newsTopics = newsTopics
                 self.tableView.reloadData()
             })
-        }
+        }       
         
         header?.isAutomaticallyChangeAlpha = true
         header?.lastUpdatedTimeLabel.isHidden = true
@@ -171,9 +171,11 @@ extension LQFTopicVC: UITableViewDelegate, UITableViewDataSource {
             let nibName = String(describing: LQFHomeJokeCell.self)
             
             let cell = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)?.last as! LQFHomeJokeCell
+            cell.isJoke = true
+            cell.joke = newsTopics[indexPath.row]
             return cell
         }
-        else if topicTitle?.category == "组图" {
+        else if topicTitle?.category == "组图" || topicTitle?.category == "image_funny" {
             let nibName = String(describing: LQFHomeImageTableCell.self)
             let cell = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)?.last as! LQFHomeImageTableCell
             cell.homeImage = newsTopics[indexPath.row]
